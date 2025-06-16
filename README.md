@@ -5,10 +5,10 @@
 
     ```bash
     # Clone this repository or download it
-    $ git clone https://github.com/fajarghifar/happybirthday
+    $ git clone https://github.com/rickyzakariap/rickyzakariap.github.io
 
     # Go into the repository
-    $ cd happybirthday
+    $ cd birthday
 
     # Open it with your text editor
     $ code .
@@ -30,7 +30,6 @@ If you have any ideas to make it more interesting, please submit a pull request 
 
 ### [MIT](LICENSE)
 
-> Github [@fajarghifar](https://github.com/fajarghifar) &nbsp;&middot;&nbsp;
-> Youtube [@fajarghifar](https://www.youtube.com/@fajarghifar/) &nbsp;&middot;&nbsp;
-> Instagram [@fajarghifar](https://instagram.com/fajarghifar) &nbsp;&middot;&nbsp;
-> Linkedin [@fajarghifar](https://www.linkedin.com/in/fajarghifar/)
+> Github [@rickyzakariap](https://github.com/rickyzakariap) &nbsp;&middot;&nbsp;
+> Instagram [@rickyzakariap](https://instagram.com/rickyzakariap) &nbsp;&middot;&nbsp;
+> Linkedin [@rickyzakariap](https://www.linkedin.com/in/rickyzakariap/)
