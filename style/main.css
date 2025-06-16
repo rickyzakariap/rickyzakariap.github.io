@@ -3,8 +3,11 @@ html {
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Mansalva', serif;
   margin: 0;
+  /* Ubah baris di bawah ini */
+  background-color: #F8F0E3; /* Contoh: Pastel Krem Lembut */
+  /* Atau coba: #EAE0D5; (Krem lebih tua) atau #E3DAC9; (Cokelat Muda) */
 }
 
 .song {
@@ -18,7 +21,8 @@ body {
   position: relative;
   text-align: center;
   visibility: hidden;
-  width: 100vw;
+  width: 80%; /* Contoh: Lebar 80% untuk layar yang lebih besar */
+  max-width: 1200px; /* Batas lebar maksimum (opsional) */
 }
 
 .container > div {
@@ -42,12 +46,13 @@ body {
 }
 
 .four .text-box {
-  border: 3px solid #aaa;
+  border: 2px solid #E0CBA8;
   border-radius: 5px;
   margin: 0 auto;
   padding: 10px;
   position: relative;
-  width: 600px;
+  width: 70%; /* Contoh: Lebar 70% untuk layar yang lebih besar */
+  max-width: 600px; /* Batas lebar maksimum (sudah ada) */
 }
 
 .text-box p {
@@ -60,7 +65,9 @@ body {
 }
 
 .text-box .fake-btn {
-  background-color: rgb(21, 161, 237);
+  /* ... */
+  /* Ubah baris di bawah ini */
+  background-color: #D2B48C; /* Contoh: Cokelat Pastel */
   border-radius: 3px;
   bottom: -50px;
   color: #fff;
@@ -80,10 +87,14 @@ body {
   border-radius: 3px;
   display: inline-block;
   padding: 3px 5px;
+  /* Tambahkan baris di bawah ini jika diperlukan */
+  background-color: #E0CBA8; /* Contoh: Warna aksen krem */
+  color: #5E4A3D; /* Contoh: Warna teks cokelat */
 }
 
 .five .idea-5 {
-  font-size: 4rem;
+  font-size: 10vw; /* Contoh: Ukuran font 10% dari lebar viewport */
+  line-height: 1.2;
 }
 
 .idea-5 span, .idea-6 span, .wish-hbd span {
@@ -150,19 +161,19 @@ body {
 }
 
 .eight svg:nth-child(1) {
-  fill: #bd6ecf;
+  fill: #EAE0D5; /* Contoh: Krem */
   left: 5vw;
   top: 7vh;
 }
 
 .eight svg:nth-child(2) {
-  fill: #7dd175;
+  fill: #D2B48C; /* Contoh: Cokelat Pastel */
   left: 35vw;
   top: 23vh;
 }
 
 .eight svg:nth-child(3) {
-  fill: #349d8b;
+  fill: #E3DAC9; /* Contoh: Cokelat Muda */
   left: 23vw;
   top: 33vh;
 }
@@ -207,6 +218,7 @@ body {
   font-size: 3em;
   margin: 0;
   text-transform: uppercase;
+  font-family: 'Mansalva', serif; /* Ganti 'Nama Font Pilihanmu' dengan nama font yang kamu pilih */
 }
 
 .wish h5 {
