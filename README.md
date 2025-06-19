@@ -49,7 +49,7 @@ The project uses the following folder structure:
 │   ├── ballon1.svg, ballon2.svg, ...
 │   └── hat.svg
 ├── music/
-│   └── glue.mpeg (or your-music.mp3)
+│   └── glue.mpeg (or your-music.mpeg)
 ├── index.html
 ├── main.css
 └── main.js
