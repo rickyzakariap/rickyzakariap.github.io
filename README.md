@@ -45,11 +45,11 @@ The project uses the following folder structure:
 ```
 /
 ├── img/
-│   ├── adek.jpg
+│   ├── adek.jpg (or your-gf.png)
 │   ├── ballon1.svg, ballon2.svg, ...
 │   └── hat.svg
 ├── music/
-│   └── glue.mpeg (or hbd.mp3)
+│   └── glue.mpeg (or your-music.mp3)
 ├── index.html
 ├── main.css
 └── main.js
