@@ -15,8 +15,7 @@
   <meta property="og:url" content="" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
-  
+  <link href="https://fonts.googleapis.com/css2?family=Mansalva&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style/main.css" />
   <!-- PWA meta -->
   <link rel="manifest" href="manifest.json">
@@ -25,9 +24,9 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
 </head>
 
-<body>
-
-  <audio class="song" loop autoplay>
+<body role="main" aria-label="Birthday greeting page">
+  <button id="theme-switcher" aria-label="Switch color theme" style="position:fixed;top:1rem;right:1rem;z-index:1000;padding:0.5rem 1rem;border-radius:20px;border:none;box-shadow:0 2px 8px rgba(0,0,0,0.08);background:#fff;cursor:pointer;font-family:'Quicksand',sans-serif;font-weight:700;">🌗 Theme</button>
+  <audio class="song" loop aria-label="Background music">
     <source src="./music/glue.mpeg">
     Your browser isn't invited for super fun audio time.
   </audio>
@@ -47,8 +46,8 @@
         <p class="hbd-chatbox">
           I didn't know what true happiness felt like until I met you. Thank you for being you. Happy Birthday to my everything, Gita Yuniar♡
         </p>
+        <p class="fake-btn">Send</p>
       </div>
-      <p class="send-btn">Send</p>
     </div>
     <div class="five">
       <p class="idea-1">I remember my life from before.</p>

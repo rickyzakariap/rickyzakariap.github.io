@@ -31,8 +31,28 @@ html {
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Quicksand', Arial, sans-serif;
   margin: 0;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  min-height: 100vh;
+  transition: background 0.5s, color 0.5s;
+}
+
+h1, h2, h3, .wish-hbd {
+  font-family: 'Mansalva', cursive;
+}
+
+#theme-switcher {
+  background: var(--color-white);
+  color: var(--color-text);
+  border: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: background 0.3s, color 0.3s;
+}
+#theme-switcher:hover, #theme-switcher:focus {
+  background: var(--color-accent);
+  color: var(--color-bg);
 }
 
 .song {
@@ -46,7 +66,12 @@ body {
   position: relative;
   text-align: center;
   visibility: hidden;
-  width: 100vw;
+  width: 80%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .container > div {
@@ -73,8 +98,8 @@ body {
 }
 
 .four .text-box {
-  border: 3px solid #aaa;
-  border-radius: 5px;
+  border: 2px solid var(--color-accent);
+  border-radius: 10px;
   margin: 0 auto;
   padding: 32px 32px 56px 32px;
   background: var(--color-white);
@@ -83,7 +108,7 @@ body {
   max-width: 600px;
   transition: box-shadow 0.3s;
   position: relative;
-  width: 600px;
+  overflow: visible;
 }
 
 .text-box p {
@@ -92,21 +117,20 @@ body {
 }
 
 .text-box .fake-btn {
-  background-color: rgb(21, 161, 237);
-  border-radius: 3px;
-  bottom: -50px;
-  color: #fff;
-  padding: .5rem 1rem;
+  background-color: var(--color-accent);
+  border-radius: 12px;
+  color: var(--color-white);
+  padding: 1rem 2.5rem;
   position: absolute;
-  right: 32px;
-  bottom: 24px;
-  min-width: 270px;
-  min-height: 132px;
+  right: 24px;
+  bottom: 20px;
+  min-width: 140px;
+  min-height: 56px;
   cursor: pointer;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.16);
+  box-shadow: 0 6px 24px rgba(0,0,0,0.20);
   transition: background 0.3s, transform 0.2s;
-  font-size: 3.6rem;
-  font-weight: bold;
+  font-size: 1.5rem;
+  font-weight: 800;
   z-index: 2;
   display: flex;
   align-items: center;
@@ -115,7 +139,7 @@ body {
   outline: none;
 }
 .text-box .fake-btn:hover, .text-box .fake-btn:focus {
-  background: var(--color-accent);
+  background: var(--color-btn);
   color: var(--color-text);
   transform: translateY(-2px) scale(1.08);
 }
@@ -131,10 +155,14 @@ body {
   border-radius: 3px;
   display: inline-block;
   padding: 3px 5px;
+  background-color: var(--color-accent);
+  color: var(--color-text);
 }
 
 .five .idea-5 {
-  font-size: 4rem;
+  font-size: 2.5rem;
+  line-height: 1.2;
+  word-break: break-word;
 }
 
 .idea-5 span, .idea-6 span, .wish-hbd span {
@@ -239,64 +267,22 @@ body {
   z-index: -1;
 }
 
-.eight svg:nth-child(1) {
-  fill: #bd6ecf;
-  left: 5vw;
-  top: 7vh;
-}
-
-.eight svg:nth-child(2) {
-  fill: #7dd175;
-  left: 35vw;
-  top: 23vh;
-}
-
-.eight svg:nth-child(3) {
-  fill: #349d8b;
-  left: 23vw;
-  top: 33vh;
-}
-
-.eight svg:nth-child(4) {
-  fill: #347a9d;
-  left: 57vw;
-  top: 43vh;
-}
-
-.eight svg:nth-child(5) {
-  fill: #c66053;
-  left: 7vw;
-  top: 68vh;
-}
-
-.eight svg:nth-child(6) {
-  fill: #bfaa40;
-  left: 77vw;
-  top: 42vh;
-}
-
-.eight svg:nth-child(7) {
-  fill: #e3bae8;
-  left: 83vw;
-  top: 68vh;
-}
-
-.eight svg:nth-child(8) {
-  fill: #8762cb;
-  left: 37vw;
-  top: 86vh;
-}
-
-.eight svg:nth-child(9) {
-  fill: #9a90da;
-  left: 87vw;
-  top: 94vh;
-}
+.eight svg:nth-child(1) { fill: #EAE0D5; left: 5vw; top: 7vh; }
+.eight svg:nth-child(2) { fill: var(--color-btn); left: 35vw; top: 23vh; }
+.eight svg:nth-child(3) { fill: #E3DAC9; left: 23vw; top: 33vh; }
+.eight svg:nth-child(4) { fill: #347a9d; left: 57vw; top: 43vh; }
+.eight svg:nth-child(5) { fill: #c66053; left: 7vw; top: 68vh; }
+.eight svg:nth-child(6) { fill: #bfaa40; left: 77vw; top: 42vh; }
+.eight svg:nth-child(7) { fill: #e3bae8; left: 60vw; top: 80vh; }
+.eight svg:nth-child(8) { fill: #b7e3ba; left: 80vw; top: 10vh; }
+.eight svg:nth-child(9) { fill: #e3e3ba; left: 50vw; top: 60vh; }
 
 .wish-hbd {
-  font-size: 3em;
-  margin: 0;
-  text-transform: uppercase;
+  font-size: 2.5rem;
+  color: var(--color-btn);
+  margin-bottom: 0.5rem;
+  letter-spacing: 2px;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
 .wish h5 {
@@ -349,7 +335,7 @@ body {
   .send-btn {
     font-size: 1.2rem;
     padding: 0.8rem 2rem;
-    min-width: 90px;
+    min-width: 100px;
     min-height: 40px;
   }
 }
@@ -362,15 +348,17 @@ body {
   .five .idea-5 { font-size: 1.1rem; }
   .idea-6 span { font-size: 1.5rem; }
   .text-box .fake-btn {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     padding: 0.7rem 1.2rem;
-    min-width: 70px;
-    min-height: 32px;
+    min-width: 80px;
+    min-height: 36px;
+    right: 12px;
+    bottom: 10px;
   }
   .send-btn {
     font-size: 1rem;
     padding: 0.6rem 1.2rem;
-    min-width: 70px;
+    min-width: 80px;
     min-height: 32px;
   }
 }
