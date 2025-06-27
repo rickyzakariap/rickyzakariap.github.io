@@ -62,6 +62,6 @@ The project uses the following folder structure:
 To personalize this greeting card for someone else:
 
 * **Names & Messages:** Edit the text directly in the `index.html` file. You can change the name in `<span id="name">` and all other messages in the various `<p>` and `<h3>` tags.
-* **Profile Picture:** Replace the image file (e.g., `adek.jpg` or `gita.jpg`) inside the `img/` folder with your own picture. Make sure to update the filename in `index.html` if it's different.
+* **Profile Picture:** Replace the image file (e.g., `adek.jpg` or `your-gf.png`) inside the `img/` folder with your own picture. Make sure to update the filename in `index.html` if it's different.
 * **Music:** Replace the audio file (e.g., `glue.mpeg` or `hbd.mp3`) in the `music/` folder and update the `src` in the `<audio>` tag in `index.html`.
 * **Colors & Fonts:** All colors and fonts can be easily changed at the top of the `main.css` file.
