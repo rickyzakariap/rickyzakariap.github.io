@@ -1,4 +1,4 @@
-# 🎂 Interactive Birthday Card Website
+# 🎂 Interactive Birthday Card Website [ARCHIVE]
 
 This is a charming, animated, and interactive single-page website designed as a digital birthday greeting card. The project showcases a sequence of heartfelt messages and visual effects, creating a memorable and personalized birthday experience.
 
