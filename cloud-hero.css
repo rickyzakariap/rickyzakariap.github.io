@@ -1,0 +1,51 @@
+.cloud-experiment{display:none}
+html[data-hero="cloud"] .hero-scene{min-height:calc(100svh - 26px);background:#f2f1eb;color:#fff;isolation:isolate}
+html[data-hero="cloud"] .cloud-experiment{display:block;position:absolute;inset:0;overflow:hidden}
+html[data-hero="cloud"] .hero-fields,html[data-hero="cloud"] .coin-button,html[data-hero="cloud"] .hero-caption,html[data-hero="cloud"] .hero-controls,html[data-hero="cloud"] .scene-more{display:none}
+.cloud-sky{position:absolute;inset:0;overflow:hidden;background:#418dd1;pointer-events:none}
+.cloud-image{position:absolute;inset:-8% -5%;background:url('assets/cloud-hero-original.webp') center 54%/cover no-repeat;transform:translate3d(0,var(--cloud-scroll,0px),0) scale(1.06);will-change:transform;animation:cloud-drift 38s ease-in-out infinite alternate}
+.cloud-sky::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(14,65,132,.16),transparent 35%,rgba(242,241,235,0) 60%,#f2f1eb 100%)}
+.cloud-mist{position:absolute;bottom:0;width:70%;height:38%;opacity:.13;background:radial-gradient(ellipse at center,white,transparent 70%);animation:mist-drift 24s ease-in-out infinite alternate}
+.cloud-mist-one{left:-18%}.cloud-mist-two{right:-20%;animation-duration:33s;animation-direction:alternate-reverse}
+.cloud-content{position:absolute;z-index:2;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:70px 20px 100px;text-shadow:0 2px 24px #28517e44}
+.cloud-intro{font:11px/1.3 monospace;letter-spacing:.13em;margin:0 0 24px}
+.cloud-title{font-size:clamp(52px,7.7vw,112px);font-weight:500;letter-spacing:-.07em;line-height:.95;margin:0 0 38px}
+.cloud-title em{font-family:Georgia,serif;font-weight:400}
+.cloud-modes{display:flex;align-items:center;justify-content:center;gap:clamp(10px,1.5vw,22px);flex-wrap:wrap}
+.cloud-modes button{border:0;border-bottom:1px solid transparent;padding:8px 0;background:none;color:#e8f5ff;letter-spacing:-.035em;font-size:clamp(18px,1.8vw,25px);transition:color .25s,transform .25s,border-color .25s}
+.cloud-modes button[aria-pressed="true"]{color:white;border-bottom-color:currentColor}.cloud-modes button:hover,.cloud-modes button:focus-visible{color:white;transform:translateY(-3px);border-bottom-color:currentColor}
+.cloud-more{position:absolute;z-index:3;bottom:clamp(20px,3.5vw,48px);left:50%;transform:translateX(-50%);color:#283c4c;font:12px/1.4 monospace;white-space:nowrap}.cloud-more span{display:inline-block;transition:transform .25s}.cloud-more:hover span{transform:translateY(5px)}
+html[data-hero="cloud"] .work{background:#f2f1eb}html[data-hero="cloud"] .program-gallery{animation:project-in .55s ease both}
+@keyframes cloud-drift{from{transform:translate3d(-1%,var(--cloud-scroll,0px),0) scale(1.06)}to{transform:translate3d(1%,var(--cloud-scroll,0px),0) scale(1.12)}}
+@keyframes mist-drift{to{transform:translate3d(10%, -5%,0)}}
+@media(max-width:760px){.cloud-content{padding:95px 18px 90px}.cloud-intro{font-size:10px}.cloud-title{font-size:clamp(45px,12vw,68px);margin-bottom:28px}.cloud-modes{gap:8px}.cloud-modes button{font-size:clamp(16px,4.5vw,20px)}.cloud-image{background-position:center bottom;inset:-5% -18%}.cloud-sky::after{background:linear-gradient(180deg,rgba(14,65,132,.12),transparent 35%,rgba(242,241,235,0) 60%,#f2f1eb 100%)}}
+@media(prefers-reduced-motion:reduce){.cloud-image,.cloud-mist{animation:none!important;transform:none!important;will-change:auto}.cloud-modes button,.cloud-more span{transition:none}}
+@media(max-width:340px){html[data-hero="cloud"] .site-header{top:48px}html[data-hero="cloud"] .menu-toggle{top:49px}}
+
+/* Cloud depth and uninterrupted transitions for the main preview. */
+.cloud-foreground{position:absolute;inset:auto -12% -3%;height:58%;background:url('assets/cloud-foreground.webp') center bottom/100% 100% no-repeat;opacity:.38;pointer-events:none;transform:translate3d(0,var(--cloud-foreground-scroll,0px),0);animation:foreground-drift 20s ease-in-out infinite alternate;will-change:transform}
+@keyframes foreground-drift{from{transform:translate3d(-2.5%,var(--cloud-foreground-scroll,0px),0) scale(1.04)}to{transform:translate3d(2.5%,var(--cloud-foreground-scroll,0px),0) scale(1.1)}}
+.cloud-image{animation-duration:30s}
+html[data-hero="cloud"] .work{background:linear-gradient(180deg,#f2f1eb 0%,#f4f3ee 55%,#f7f6f0 100%)}
+html[data-hero="cloud"] .about{background:#f7f6f0}
+html[data-hero="cloud"] .ascii-footer.contact-scene{background:linear-gradient(180deg,#f3f2eb 0%,#e6eeeb 36%,#c3dde4 100%)}
+html[data-hero="cloud"] .shark-frame{filter:grayscale(1)}
+html[data-hero="cloud"] .ascii-scene::after{background:linear-gradient(to bottom,rgba(169,211,224,0) 0%,rgba(169,211,224,.12) 28%,rgba(153,205,223,.52) 65%,rgba(153,205,223,.55) 100%)}
+@media(max-width:760px){.cloud-foreground{inset:auto -32% 1%;height:48%;opacity:.32;background-size:100% 100%}}
+@media(prefers-reduced-motion:reduce){.cloud-foreground{animation:none!important;transform:none!important;will-change:auto}}
+@media(max-width:760px){html[data-hero="cloud"] .home-page.scrolled:not(.menu-open) .menu-toggle{top:8px}}
+/* Continuous surface colours and visible, layered cloud drift. */
+html[data-hero="cloud"] .home-page .about{background:linear-gradient(180deg,#f7f6f0 0%,#f5f4ee 55%,#f1f0eb 100%)}
+html[data-hero="cloud"] .home-page .experience{background:linear-gradient(180deg,#f1f0eb 0%,#efefea 48%,#f0f0eb 100%)}
+html[data-hero="cloud"] .home-page .capabilities{background:linear-gradient(180deg,#f0f0eb 0%,#f3f2eb 100%)}
+.cloud-image{animation:sky-orbit 28s ease-in-out infinite;transform:translate3d(0,var(--cloud-scroll,0px),0) scale(1.1)}
+.cloud-foreground{height:68%;opacity:.62;animation:cloud-orbit 18s ease-in-out infinite}
+@keyframes sky-orbit{0%,100%{transform:translate3d(-2%,var(--cloud-scroll,0px),0) scale(1.1)}25%{transform:translate3d(0,calc(var(--cloud-scroll,0px) - 1%),0) scale(1.12)}50%{transform:translate3d(2%,var(--cloud-scroll,0px),0) scale(1.1)}75%{transform:translate3d(0,calc(var(--cloud-scroll,0px) + 1%),0) scale(1.08)}}
+@keyframes cloud-orbit{0%,100%{transform:translate3d(-4%,var(--cloud-foreground-scroll,0px),0) scale(1.07)}25%{transform:translate3d(0,calc(var(--cloud-foreground-scroll,0px) - 2%),0) scale(1.1)}50%{transform:translate3d(4%,var(--cloud-foreground-scroll,0px),0) scale(1.07)}75%{transform:translate3d(0,calc(var(--cloud-foreground-scroll,0px) + 2%),0) scale(1.04)}}
+@media(max-width:760px){.cloud-foreground{height:58%;opacity:.55}}
+@media(prefers-reduced-motion:reduce){.cloud-image,.cloud-foreground{animation:none!important;transform:none!important;will-change:auto}}
+.cloud-modes button{text-shadow:0 1px 5px rgba(17,51,80,.8)}
+/* Keep the established hero composition while accommodating the refined copy. */
+html[data-hero="cloud"] .cloud-title{font-size:clamp(43px,5.7vw,82px);line-height:1.02;margin-bottom:18px}
+.cloud-summary{max-width:590px;margin:0 0 24px;font-size:clamp(14px,1.2vw,17px);line-height:1.4}
+@media(max-width:760px){html[data-hero="cloud"] .cloud-title{font-size:clamp(35px,8.5vw,62px);margin-bottom:16px}.cloud-summary{max-width:340px;margin-bottom:18px;font-size:14px}}
