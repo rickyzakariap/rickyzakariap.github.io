@@ -159,6 +159,7 @@
 .home-page.scrolled:not(.menu-open) .menu-toggle{background:transparent;color:#182d29;text-shadow:0 1px 3px #f4f3ee,0 0 7px #f4f3ee}
 .home-page.menu-open .menu-toggle{background:transparent;color:#efefed;text-shadow:none}
 @media(max-width:760px){.home-page .menu-toggle{min-height:44px;padding:6px 4px}}
+@media(max-width:760px){.home-page.scrolled:not(.menu-open) .site-header::before{content:"";position:fixed;inset:0 0 auto;height:76px;z-index:-1;pointer-events:none;background:linear-gradient(to bottom,#f2f1eb 0 68%,rgba(242,241,235,0) 100%)}}
 
 /* Fade the original canvas into the same continuous footer gradient. */
 .ascii-footer.contact-scene{padding-bottom:0;background:linear-gradient(180deg,#f3f2eb 0%,#f1e9d6 78%)}
