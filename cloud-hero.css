@@ -49,3 +49,13 @@ html[data-hero="cloud"] .home-page .capabilities{background:linear-gradient(180d
 html[data-hero="cloud"] .cloud-title{font-size:clamp(43px,5.7vw,82px);line-height:1.02;margin-bottom:18px}
 .cloud-summary{max-width:590px;margin:0 0 24px;font-size:clamp(14px,1.2vw,17px);line-height:1.4}
 @media(max-width:760px){html[data-hero="cloud"] .cloud-title{font-size:clamp(35px,8.5vw,62px);margin-bottom:16px}.cloud-summary{max-width:340px;margin-bottom:18px;font-size:14px}}
+
+/* The active discipline changes the light while retaining the original cloud layers. */
+.cloud-sky::before{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(180deg,#f1a99a 0%,#f4bd83 48%,#eec596 75%,#f2f1eb 100%);mix-blend-mode:color;opacity:0;transition:opacity 1.1s ease}
+.cloud-sky::after{z-index:2;pointer-events:none}
+body.programming .cloud-sky::before{opacity:.88}
+@media(max-width:760px){.cloud-image{inset:-8% -10%;background-position:center 48%}.cloud-foreground{inset:auto -14% 1%;height:48%;opacity:.43}}
+@media(prefers-reduced-motion:reduce){.cloud-sky::before{transition:none}}
+
+/* Keep a cloud bank visible along one side of the narrow hero. */
+@media(max-width:760px){.cloud-image{background-position:18% 48%}.cloud-foreground{bottom:-7%;height:44%;opacity:.34}.cloud-content{text-shadow:0 2px 5px rgba(20,42,62,.9),0 1px 20px rgba(20,42,62,.45)}}

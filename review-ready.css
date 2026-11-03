@@ -110,7 +110,6 @@
 .client-node .social-logo-stage{align-items:center;justify-content:center}
 .client-node .social-logo-media{display:flex;align-items:center;justify-content:center}
 .client-node .social-logo-media img{display:block;max-width:100%;max-height:100%;object-fit:contain;object-position:center}
-.client-node .social-logo-media img[src$="fiesta.png"]{transform:scale(1.45)}
 @media(max-width:760px){.client-node:nth-child(odd) .social-logo-info{left:0;right:auto}.client-node:nth-child(even) .social-logo-info{left:auto;right:0}}
 @media(prefers-reduced-motion:reduce){.client-node .social-gallery-link{transition:none}}
 
@@ -150,6 +149,16 @@
 .ascii-footer .shark-credit{display:block;padding-top:12px;color:#53665b;font:10px/1.4 monospace}.shark-credit a{text-decoration:underline;text-underline-offset:3px}
 @media(max-width:760px){.footer-top{grid-template-columns:1fr;gap:34px}.footer-navigation{grid-template-columns:minmax(72px,1fr) minmax(0,2fr);gap:15px}.ascii-footer .contact-links{gap:3px}.ascii-footer .contact-links a{min-width:59px;font-size:11px}.ascii-footer .contact-links a svg{width:26px;height:26px}.ascii-scene{height:390px;margin-top:18px}}
 @media(max-width:340px){.ascii-footer .contact-links a{min-width:53px;font-size:10px}}
+
+/* Let the approved social links wrap naturally on narrow screens. */
+.ascii-footer .contact-links{flex-wrap:wrap;justify-content:flex-start}
+@media(max-width:500px){.ascii-footer .contact-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px 8px}}
+
+/* The closed control has no opaque surface while scrolling. */
+.home-page:not(.menu-open) .menu-toggle{background:transparent;text-shadow:0 1px 5px rgba(0,0,0,.5)}
+.home-page.scrolled:not(.menu-open) .menu-toggle{background:transparent;color:#182d29;text-shadow:0 1px 3px #f4f3ee,0 0 7px #f4f3ee}
+.home-page.menu-open .menu-toggle{background:transparent;color:#efefed;text-shadow:none}
+@media(max-width:760px){.home-page .menu-toggle{min-height:44px;padding:6px 4px}}
 
 /* Fade the original canvas into the same continuous footer gradient. */
 .ascii-footer.contact-scene{padding-bottom:0;background:linear-gradient(180deg,#f3f2eb 0%,#f1e9d6 78%)}
